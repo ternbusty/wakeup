@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="styles.css">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, user-scalable=no">
-<title>Setting Up Time</title>
-<script src="js/require.js"></script>
-<script>
-require(["/webiopi.js", "javascript.js"], function(){
-    webiopi().ready( initialize_webiopi );
-});
-</script>
-</head>
-<body class="align">
-  <div class="grid">
-    <div id="login">
-      <h2><span class="fontawesome-lock"></span>Setting</h2>
-      <form name="myform">
-        <fieldset>
-          <p><label for="time">Time configuration</label></p>
-          <p><input type="time" name="execTime" id="execTime"></p>
-          <p><button onclick="clickEvent()">Submit</button></p>
-        </fieldset>
-      </form>
-    </div>
-  </div>
-</body> 
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <title>Setting Up Time</title>
+        <script src="js/require.js"></script>
+        <script>
+            require(["/webiopi.js", "javascript.js"], function() {
+                webiopi().ready(initialize_webiopi);
+            });
+        </script>
+    </head>
+    <body class="align">
+        <div class="grid">
+            <div id="login">
+                <h2><span class="fontawesome-lock"></span>Setting</h2>
+                <form name="myform">
+                    <fieldset>
+                        <p><label for="time">Time configuration</label></p>
+                        <p><input type="time" name="execTime" id="execTime" /></p>
+                        <p><button onclick="clickEvent()">Submit</button></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
